@@ -9,8 +9,8 @@ function App() {
   return (
     <div>
       <Header />   
-      <ItemListContainer greeting={'Hola a todos'} />   
       <Main />
+      <ItemListContainer greeting={'Hola a todos'} />   
       <Footer />
     </div>
   );

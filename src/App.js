@@ -1,18 +1,19 @@
+import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
 import './style.css';
-import Header from './components/header';
-import Main from './components/main';
-import Footer from './components/footer';
-import ItemListContainer from './components/ItemListContainer';
+import Header from './components/Header';
+import Main from './components/Main';
+import Footer from './components/Footer';
+
+
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Header />   
       <Main />
-      <ItemListContainer greeting={'Hola a todos'} />   
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 

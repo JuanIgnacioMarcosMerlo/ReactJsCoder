@@ -1,5 +1,6 @@
 import React from 'react';
-import Navbar from './navbar';
+import Navbar from './Header/NavBar';
+
 const Header = () => {
   return (
     <div className='header'>

@@ -1,6 +1,6 @@
-// ItemDetailContainer.js
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import Contador from './Contador';
 
 const ItemDetailContainer = () => {
   const { id: itemId } = useParams();
@@ -29,10 +29,11 @@ const ItemDetailContainer = () => {
           <h2>{product.title}</h2>
           <img src={product.image} alt={product.title} />
           <p>{product.description}</p>
-          <p>Price: ${product.price}</p>
+          <p>Precio: ${product.price}</p>
+          < Contador />
         </div>
       ) : (
-        <p>Loading...</p>
+        <p>Cargando...</p>
       )}
     </div>
   );

@@ -16,10 +16,9 @@ function CarritoHijo(props) {
 
     return (
         <div>
-            <p className="text-xl font-semibold">Cantidad : {cantidad}</p>
-            <button className="bg-blue-500 text-white px-4 py-2 rounded mt-2" onClick={handleSumar}>+</button>
-            <button className="bg-green-500 text-white px-4 py-2 rounded mt-2 ml-2"
-                    onClick={handleConfirmar}>confirmar</button>
+            <p>Cantidad : {cantidad}</p>
+            <button onClick={handleSumar}>+</button>
+            <button onClick={handleConfirmar}>confirmar</button>
         </div>
     )
 }

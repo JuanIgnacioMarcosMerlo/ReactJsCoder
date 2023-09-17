@@ -1,18 +1,20 @@
 import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
-import Header from './components/Header';
-import Main from './components/Main';
-import Footer from './components/Footer';
-
+import Header from './components/header';
+import Main from './components/main';
+import Footer from './components/footer';
+import { CartProvider } from './components/CartContext'; 
 
 
 
 function App() {
   return (
     <BrowserRouter>
-      <Header />   
-      <Main />
-      <Footer />
+    <CartProvider>
+        <Header />   
+        <Main />
+        <Footer />
+      </CartProvider>
     </BrowserRouter>
   );
 }
